@@ -5,7 +5,9 @@ $light_grey: #b4b4b4;
 $grey: #8c8c8c;
 $dark_grey: #777;
 $darkest_grey: #555;
+$dark_bg: #000;
 $vapour: #909;
+$vapour_dark_bg: #FF2EFF;
 
 /* GENERALITIES */
 .charsheet {
@@ -466,7 +468,8 @@ textarea.sheet-smallcaps {
 	width: 95%;
 	padding: 5px;
 	margin-bottom: 5px;
-	background: $darkest_grey;
+	background: $dark_bg;
+  color: $vapour_dark_bg;
 	font-size: 12px;
 	line-height: 15px;
 }
@@ -490,7 +493,12 @@ textarea.sheet-smallcaps {
 	flex-grow: 1;
 }
 .sheet-playbookitems {
-	background: $darkest_grey;
+	background: $dark_bg;
+  color: $vapour_dark_bg;
+
+  input[type=number] {
+    color: $vapour_dark_bg;
+  }
 }
 .sheet-regularitems {
 	.repcontainer {
@@ -707,7 +715,8 @@ textarea.sheet-smallcaps {
 }
 .sheet-advancement-desc {
 	width: 99%;
-	background: $darkest_grey;
+	background: $dark_bg;
+  color: $vapour_dark_bg;
 	padding: 15px 10px 4px 11px;
 	li {
 		font-style: italic;
@@ -724,7 +733,7 @@ textarea.sheet-smallcaps {
 	align-items: center;
 	height: 50px;
 	position: relative;
-	background: $darkest_grey;
+	background: $dark_bg;
 	input[type=text] {
 		flex: 0 0 auto;
 		margin: 0 2px;
@@ -732,6 +741,7 @@ textarea.sheet-smallcaps {
 		letter-spacing: -1px;
 		font-size: 35px;
 		line-height: 40px;
+    color: $vapour_dark_bg;
 	}
 	textarea {
 		height: 42px;
@@ -739,14 +749,14 @@ textarea.sheet-smallcaps {
 		font-size: 10px;
 		padding-left: 3px;
 		letter-spacing: 1px;
-		color: $grey;
+		color: $light_grey;
 		resize: none;
 		overflow: hidden;
 		line-height: 14px;
 	}
 	.sheet-reminder {
 		position: absolute;
-		border: 1px solid $vapour;
+		border: 1px solid $vapour_dark_bg;
 		background: white;
 		top: 48px;
 		z-index: 3;
@@ -839,8 +849,12 @@ textarea.sheet-smallcaps {
 	.repitem {
 		display: flex;
 		padding: 4px 2px;
-		background: $darkest_grey;
+		background: $dark_bg;
 		align-items: start;
+
+    textarea {
+      color: $vapour_dark_bg;
+    }
 	}
 	.itemcontrol {
 		top: 0;
@@ -1362,7 +1376,7 @@ input.sheet-zero {
 /* SPECIAL ABILITIES*/
 .sheet-specialability,
 .sheet-friend-contact {
-	border-bottom: 1px solid $dark_grey;
+	border-bottom: 1px solid $dark_bg;
 	width: 100%;
 	align-items: start;
 }
@@ -1650,7 +1664,8 @@ input.sheet-zero {
 	font-weight: bold;
 }
 .sheet-bonusdietext {
-	background: $darkest_grey;
+	background: $dark_bg;
+  color: $vapour_dark_bg;
 	width: 90%;
 	padding: 3px;
 	font-size: 11px;
@@ -1831,7 +1846,7 @@ button[type=roll].sheet-rollbutton {
 }
 .sheet-coinrow button[type=roll].sheet-rollbutton {
 	font-size: 11px;
-	color: $lighter_grey;
+	color: $darkest_grey;
 }
 .sheet-blackheader button[type=roll].sheet-rollbutton {
 	margin:auto;
@@ -1916,14 +1931,14 @@ input.sheet-checkbox.sheet-squarebox-small, .sheet-checkbox.sheet-squarebox-smal
 .sheet-specialability .sheet-checkbox:checked ~ .sheet-abilityname,
 .sheet-item .sheet-checkbox:checked ~ .sheet-itemname,
 .sheet-friend .sheet-friendstate[value="up"] ~ .sheet-auto-expand {
-	color: $vapour;
+	color: $vapour_dark_bg;
 }
 .sheet-friend-contact .sheet-friendstate:not([value="0"]) ~ .sheet-auto-expand {
 	font-weight: bold;
 }
 .sheet-friend .sheet-friendstate[value="down"] ~ .sheet-auto-expand,
 .sheet-contact .sheet-friendstate[value="1"] ~ .sheet-auto-expand {
-	color: $vapour;
+	color: $vapour_dark_bg;
 }
 /* specific adjustments */
 .sheet-specialability .sheet-checkbox,
