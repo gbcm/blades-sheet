@@ -2,7 +2,7 @@
 	@if $angle == 0 {
 		background: white;
 	} @else if $angle == 360 {
-		background: red;
+		background: $vapour;
 	} @else if $angle < 180 {
 		background-image: linear-gradient(90deg, white 50%, transparent 50%), linear-gradient(#{90 + $angle}deg, red 50%, white 50%);
 	} @else {

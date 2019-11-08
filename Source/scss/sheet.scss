@@ -1,20 +1,15 @@
 /* Variants of grey */
-$lightest: #d8d8d8;
-$lighter: #c7c7c7;
-$darkgrey: #b4b4b4;
-$versiongrey: #aaa;
-$greyborder: #8c8c8c;
-$headergrey: #808080;
-$lightblack: #777;
-$lighterblack: #555;
-$fontblack: #333;
-
-/* red */
-$redtext: #c43c35;
+$lightest_grey: #d8d8d8;
+$lighter_grey: #c7c7c7;
+$light_grey: #b4b4b4;
+$grey: #8c8c8c;
+$dark_grey: #777;
+$darkest_grey: #555;
+$vapour: #909;
 
 /* GENERALITIES */
 .charsheet {
-	color: $fontblack;
+	color: $vapour;
 	font-size: 0;
 	position: relative;
 	top: -11px;
@@ -22,6 +17,7 @@ $redtext: #c43c35;
 	cursor: default;
 	box-sizing: border-box;
 	padding: 0 !important;
+	background-color: $lightest_grey;
 	font-family: Georgia, "Bitstream Charter", "Times New Roman", serif;
 
 	div, span, textarea, ul, li, span, label {
@@ -47,7 +43,7 @@ $redtext: #c43c35;
 		padding: 0;
 		display: flex;
 		width: auto;
-		color: $fontblack;
+		color: $vapour;
 		font: inherit;
 
 		input[type=checkbox], input[type=radio] {
@@ -69,7 +65,7 @@ $redtext: #c43c35;
 		width: 100%;
 		padding: 0;
 		margin: 0;
-		color: $fontblack;
+		color: $vapour;
 		border-radius: 0;
 		transition: all 0.2s, height 0.4s;
 	}
@@ -83,8 +79,8 @@ $redtext: #c43c35;
 	}
 
 	input[type=number] {
-		border-color: $lighter;
-		color: $fontblack;
+		border-color: $dark_grey;
+		color: $vapour;
 		box-shadow: none;
 	}
 
@@ -151,7 +147,7 @@ $redtext: #c43c35;
 	line-height: 22px;
 	margin: 0 0 7px calc(55% + 5px);
 	.sheet-version {
-		color: $versiongrey;
+		color: $grey;
 		font-size: 13px;
 		font-family: "Times New Roman", Times, serif;
 	}
@@ -178,14 +174,14 @@ $redtext: #c43c35;
 .sheet-type-selector {
 	display: flex;
 	margin-right: auto;
-	background: $lighter;
-	border: 1px solid $versiongrey;
+	background: $dark_grey;
+	border: 1px solid $grey;
 	letter-spacing: 1px;
 	line-height: 20px;
 	justify-content: center;
 	width: 170px;
 	font-size: 11px;
-	color: $lighterblack;
+	color: $lightest_grey;
 
 	input {
 		position: absolute;
@@ -193,7 +189,7 @@ $redtext: #c43c35;
 		height: 20px;
 	}
 	&:hover {
-		color: red;
+		color: $vapour;
 	}
 	.sheet-3waybox:not(:checked) + .sheet-3waybox,
 	input[value="character"]:not(:checked) ~ span[data-i18n="character_mode"],
@@ -229,7 +225,7 @@ $redtext: #c43c35;
 		font-size: 10px;
 		min-height: 24px;
 		line-height: 17px;
-		border-bottom: 1px solid $lightest;
+		border-bottom: 1px solid $darkest_grey;
 
 		&.sheet-generaterow {
 			line-height: 0;
@@ -260,7 +256,7 @@ $redtext: #c43c35;
 		padding-left: 1px;
 		line-height: 16px;
 		border-radius: 3px;
-		border: 1px solid $lightest;
+		border: 1px solid $darkest_grey;
 		&.sheet-wide {
 			width: 200px;
 			margin-right: 8px;
@@ -327,7 +323,7 @@ $redtext: #c43c35;
 	padding: 1px 2px 0 4px;
 }
 .sheet-black-on-grey, .sheet-greyheader {
-	background: $darkgrey;
+	background: $dark_grey;
 }
 .sheet-black-on-grey {
 	text-align: center;
@@ -345,7 +341,7 @@ $redtext: #c43c35;
 	line-height: 22px;
 }
 .sheet-specialheader {
-	background: $darkgrey;
+	background: $dark_grey;
 	height: 20px;
 	font-size: 11px;
 	line-height: 20px;
@@ -364,7 +360,7 @@ $redtext: #c43c35;
 	font-weight: bold;
 }
 .sheet-greyholder {
-	background: $lightest;
+	background: $darkest_grey;
 }
 .sheet-def-margin {
 	margin-top: 10px;
@@ -376,7 +372,7 @@ $redtext: #c43c35;
 	border-top: 3px solid black;
 }
 .sheet-tier {
-	background: $lightest;
+	background: $darkest_grey;
 	height: 16px;
 	width: 56px;
 	align-items: center;
@@ -470,7 +466,7 @@ textarea.sheet-smallcaps {
 	width: 95%;
 	padding: 5px;
 	margin-bottom: 5px;
-	background: $lightest;
+	background: $darkest_grey;
 	font-size: 12px;
 	line-height: 15px;
 }
@@ -494,7 +490,7 @@ textarea.sheet-smallcaps {
 	flex-grow: 1;
 }
 .sheet-playbookitems {
-	background: $lightest;
+	background: $darkest_grey;
 }
 .sheet-regularitems {
 	.repcontainer {
@@ -566,7 +562,7 @@ textarea.sheet-smallcaps {
 	height: 2px;
 	margin: 8px 0 0 -3px;
 	flex: 0 0 auto;
-	background: $greyborder;
+	background: $grey;
 }
 /* Repeating items*/
 .sheet-numboxes[value="0"] ~ .sheet-boxesgeq2,
@@ -592,7 +588,7 @@ textarea.sheet-smallcaps {
 	}
 	label {
 		height: 18px;
-		border: 1px solid $versiongrey;
+		border: 1px solid $grey;
 		margin-left: auto;
 		padding: 2px;
 		line-height: 12px;
@@ -619,14 +615,14 @@ textarea.sheet-smallcaps {
 		content: "▼";
 	}
 	~ textarea {
-		border-top: 1px solid $lightest;
+		border-top: 1px solid $darkest_grey;
 		line-height: 12px;
 		font-size: 10px;
 		height: 49px;
 	}
 }
 .sheet-itemholder .sheet-playbookitems .sheet-expand ~ textarea {
-	border-color: $versiongrey;
+	border-color: $grey;
 }
 /* LOGO */
 .sheet-bladeslogo {
@@ -637,7 +633,7 @@ textarea.sheet-smallcaps {
 	background-repeat: no-repeat;
 }
 .sheet-crewheader {
-	color: $headergrey;
+	color: $grey;
 	font-size: 28px;
 	align-self: flex-start;
 	letter-spacing: -2px;
@@ -646,7 +642,7 @@ textarea.sheet-smallcaps {
 /* LOAD */
 .sheet-itemheader,
 .sheet-loadheader {
-	background: $darkgrey;
+	background: $dark_grey;
 	height: 20px;
 	font-size: 10px;
 	padding: 3px 2px 1px 4px;
@@ -676,10 +672,10 @@ textarea.sheet-smallcaps {
 		margin-left: auto;
 		input[type=checkbox] + span {
 			opacity: 1;
-			color: $fontblack;
+			color: $vapour;
 		}
 		&:hover input[type=checkbox] + span {
-			color: red;
+			color: $vapour;
 		}
 	}
 }
@@ -711,7 +707,7 @@ textarea.sheet-smallcaps {
 }
 .sheet-advancement-desc {
 	width: 99%;
-	background: $lightest;
+	background: $darkest_grey;
 	padding: 15px 10px 4px 11px;
 	li {
 		font-style: italic;
@@ -728,7 +724,7 @@ textarea.sheet-smallcaps {
 	align-items: center;
 	height: 50px;
 	position: relative;
-	background: $lightest;
+	background: $darkest_grey;
 	input[type=text] {
 		flex: 0 0 auto;
 		margin: 0 2px;
@@ -743,14 +739,14 @@ textarea.sheet-smallcaps {
 		font-size: 10px;
 		padding-left: 3px;
 		letter-spacing: 1px;
-		color: $headergrey;
+		color: $grey;
 		resize: none;
 		overflow: hidden;
 		line-height: 14px;
 	}
 	.sheet-reminder {
 		position: absolute;
-		border: 1px solid $fontblack;
+		border: 1px solid $vapour;
 		background: white;
 		top: 48px;
 		z-index: 3;
@@ -794,7 +790,7 @@ textarea.sheet-smallcaps {
 		padding: 3px 0 0 2px;
 		margin: 3px 0 0;
 		min-height: 22px;
-		color: $redtext;
+		color: $vapour;
 	}
 	input[type="hidden"] {
 		&[value=""] + div > .sheet-title::after {
@@ -843,7 +839,7 @@ textarea.sheet-smallcaps {
 	.repitem {
 		display: flex;
 		padding: 4px 2px;
-		background: $lightest;
+		background: $darkest_grey;
 		align-items: start;
 	}
 	.itemcontrol {
@@ -1222,7 +1218,7 @@ textarea.sheet-smallcaps {
 .sheet-text-button {
 	font-weight: bold;
 	input:checked + span {
-		color: red;
+		color: $vapour;
 	}
 }
 .sheet-size-choice > .sheet-text-button {
@@ -1366,7 +1362,7 @@ input.sheet-zero {
 /* SPECIAL ABILITIES*/
 .sheet-specialability,
 .sheet-friend-contact {
-	border-bottom: 1px solid $darkgrey;
+	border-bottom: 1px solid $dark_grey;
 	width: 100%;
 	align-items: start;
 }
@@ -1420,7 +1416,7 @@ input.sheet-zero {
 }
 .sheet-friend-contact .sheet-auto-expand {
 	font-size: 12px;
-	color: $lighterblack;
+	color: $lightest_grey;
 	min-height: 20px;
 	line-height: 16px;
 	flex: 1 1 0;
@@ -1442,7 +1438,7 @@ input.sheet-zero {
 	}
 	.sheet-harmeffect {
 		width: 59px;
-		color: $lighterblack;
+		color: $lightest_grey;
 		font-size: 10px;
 		letter-spacing: 1px;
 		line-height: 1.4;
@@ -1457,7 +1453,7 @@ input.sheet-zero {
 	textarea {
 		font-size: 12px;
 		padding: 10px 4px 3px;
-		color: $redtext;
+		color: $vapour;
 		overflow: hidden;
 		height: 52px;
 		resize: none;
@@ -1465,7 +1461,7 @@ input.sheet-zero {
 		text-align: center;
 		border-bottom: 1px solid black;
 		+ textarea {
-			border-left: 1px solid $lightest;
+			border-left: 1px solid $darkest_grey;
 		}
 	}
 }
@@ -1501,7 +1497,7 @@ input.sheet-zero {
 		order: 1;
 	}
 	input:checked ~ span {
-		color: red;
+		color: $vapour;
 	}
 	.sheet-checkbox + span {
 		border: 1px solid black;
@@ -1519,15 +1515,15 @@ input.sheet-zero {
 	margin-right: auto;
 }
 .sheet-coin {
-	border-bottom: 1px solid $greyborder;
-	border-right: 1px solid $greyborder;
+	border-bottom: 1px solid $grey;
+	border-right: 1px solid $grey;
 	width: 70%;
 	height: 19px;
 	padding: 1px 3px 0 0;
 	align-items: center;
 }
 .sheet-stashbutton-holder {
-	border-top: 1px solid $greyborder;
+	border-top: 1px solid $grey;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -1554,7 +1550,7 @@ input.sheet-zero {
 	font-style: italic;
 }
 .sheet-crewcoinbar {
-	border-left: 1px solid $lighter;
+	border-left: 1px solid $dark_grey;
 	height: 15px;
 	width: 3px;
 	margin: -1px auto 0;
@@ -1572,7 +1568,7 @@ input.sheet-zero {
 		margin-right: auto;
 	}
 	input:checked ~ .sheet-radiobox.sheet-vaultcoin + span {
-		border-color: $lighter;
+		border-color: $dark_grey;
 	}
 }
 .sheet-coin-and-stash {
@@ -1599,7 +1595,7 @@ input.sheet-zero {
 }
 .sheet-coin, .sheet-crewcoin {
 	.sheet-radiobox + span {
-		background: red;
+		background: $vapour;
 		border: 1px solid black;
 	}
 	input:checked ~ .sheet-radiobox + span {
@@ -1612,7 +1608,7 @@ input.sheet-zero {
 		margin-right: calc((100% - 126px)/9);
 	}
 	input:checked ~ .sheet-radiobox + span {
-		background: $lighter;
+		background: $dark_grey;
 	}
 	input.sheet-radiobox:nth-of-type(10n+1) {
 		margin: -2px -17px 0 3px;
@@ -1654,7 +1650,7 @@ input.sheet-zero {
 	font-weight: bold;
 }
 .sheet-bonusdietext {
-	background: $lightest;
+	background: $darkest_grey;
 	width: 90%;
 	padding: 3px;
 	font-size: 11px;
@@ -1671,9 +1667,9 @@ input.sheet-zero {
 	}
 	button {
 		background: transparent;
-		color: $lightblack;
+		color: $lighter_grey;
 		border-radius: 0;
-		border-color: $darkgrey;
+		border-color: $dark_grey;
 		transition: all 0.2s;
 		font-family: pictos;
 		font-size: 0;
@@ -1683,7 +1679,7 @@ input.sheet-zero {
 		&:hover {
 			color: black;
 			border-color: black;
-			background: $lighter;
+			background: $dark_grey;
 		}
 		&.repcontrol_edit::after { content: "(" }
 		&.repcontrol_add::after { content: "&" }
@@ -1793,7 +1789,7 @@ input.sheet-zero {
 .sheet-notes {
 	margin-left: 1%;
 	font-family: "Shadows Into Light", cursive;
-	color: $redtext;
+	color: $vapour;
 	font-size: 20px;
 	width: 98%;
 	background: linear-gradient(transparent 26px,#a7a7a7 1px) 0 0 / 100% 27px;
@@ -1835,15 +1831,15 @@ button[type=roll].sheet-rollbutton {
 }
 .sheet-coinrow button[type=roll].sheet-rollbutton {
 	font-size: 11px;
-	color: $lightblack;
+	color: $lighter_grey;
 }
 .sheet-blackheader button[type=roll].sheet-rollbutton {
 	margin:auto;
 }
 button[type=roll].sheet-borderbutton {
-	color: $lightblack;
+	color: $lighter_grey;
 	font-size: 13px;
-	border-color: $darkgrey;
+	border-color: $dark_grey;
 }
 button[type=roll].sheet-vicebutton {
 	float: right;
@@ -1867,7 +1863,7 @@ button[type=roll].sheet-engagementbutton {
 	margin: 10px 10px 0;
 }
 button[type=roll].sheet-rollbutton:hover {
-	color: red;
+	color: $vapour;
 }
 button[type=roll].sheet-borderbutton:hover {
 	color: black;
@@ -1883,10 +1879,10 @@ input.sheet-checkbox, .sheet-checkbox + span {
 	flex: 0 0 auto;
 }
 .sheet-checkbox + span {
-	border: 1px solid $greyborder;
+	border: 1px solid $grey;
 }
 .sheet-checkbox:checked + span {
-	background: red;
+	background: $vapour;
 }
 .sheet-checkbox:hover + span {
 	opacity: 0.7;
@@ -1914,20 +1910,20 @@ input.sheet-checkbox.sheet-squarebox-small, .sheet-checkbox.sheet-squarebox-smal
 	height: 100%;
 }
 .sheet-claimbridge input:checked + span {
-	background: $lightest;
+	background: $darkest_grey;
 }
 /* Change text colour when boxes are checked*/
 .sheet-specialability .sheet-checkbox:checked ~ .sheet-abilityname,
 .sheet-item .sheet-checkbox:checked ~ .sheet-itemname,
 .sheet-friend .sheet-friendstate[value="up"] ~ .sheet-auto-expand {
-	color: red;
+	color: $vapour;
 }
 .sheet-friend-contact .sheet-friendstate:not([value="0"]) ~ .sheet-auto-expand {
 	font-weight: bold;
 }
 .sheet-friend .sheet-friendstate[value="down"] ~ .sheet-auto-expand,
 .sheet-contact .sheet-friendstate[value="1"] ~ .sheet-auto-expand {
-	color: $fontblack;
+	color: $vapour;
 }
 /* specific adjustments */
 .sheet-specialability .sheet-checkbox,
@@ -1950,10 +1946,10 @@ input.sheet-checkbox.sheet-squarebox-small, .sheet-checkbox.sheet-squarebox-smal
 }
 /* Fake radios */
 .sheet-checkbox.sheet-fakeradio + span {
-	background: red;
+	background: $vapour;
 }
 .sheet-action .sheet-fakeradio:checked ~ .sheet-fakeradio + span {
-	background: $lighter;
+	background: $dark_grey;
 }
 .sheet-tier .sheet-fakeradio:checked ~ .sheet-fakeradio + span {
 	background: white;
@@ -1981,7 +1977,7 @@ input.sheet-checkbox.sheet-squarebox-small, .sheet-checkbox.sheet-squarebox-smal
 			border-bottom-color: white;
 		}
 		.sheet-checkbox:checked + span {
-			border-bottom-color: red;
+			border-bottom-color: $vapour;
 		}
 	}
 	&.sheet-down {
@@ -2117,7 +2113,7 @@ input.sheet-checkbox.sheet-squarebox-small, .sheet-checkbox.sheet-squarebox-smal
 		height: 13px;
 		z-index: 10;
 		&:checked + span {
-			color: red;
+			color: $vapour;
 		}
 	}
 }
@@ -2141,7 +2137,7 @@ input.sheet-checkbox.sheet-squarebox-small, .sheet-checkbox.sheet-squarebox-smal
 	padding: 1px 0;
 	line-height: 12px;
 	height: 50px;
-	border-bottom: 1px solid $lightest;
+	border-bottom: 1px solid $darkest_grey;
 }
 /* CLAIMS */
 .sheet-claims {
@@ -2162,7 +2158,7 @@ input.sheet-checkbox.sheet-squarebox-small, .sheet-checkbox.sheet-squarebox-smal
 	justify-content: space-between;
 }
 .sheet-lairbox {
-	background: $lightblack;
+	background: $lighter_grey;
 	width: 18.4%;
 	font-size: 13px;
 	color: white;
@@ -2179,7 +2175,7 @@ input.sheet-checkbox.sheet-squarebox-small, .sheet-checkbox.sheet-squarebox-smal
 	margin: 0 calc(9.2% - 6px);
 }
 .sheet-claimbox {
-	background: $lightest;
+	background: $darkest_grey;
 	width: 18.4%;
 	position: relative;
 	transition: all 0.2s;
@@ -2205,7 +2201,7 @@ input.sheet-checkbox.sheet-squarebox-small, .sheet-checkbox.sheet-squarebox-smal
 	}
 }
 input[value="1"] + .sheet-claimbox {
-	background: $lighter;
+	background: $dark_grey;
 }
 /* ALCHEMICALS */
 .sheet-title-checkbox ~ div {
@@ -2223,7 +2219,7 @@ input.sheet-title-checkbox {
 	height: 24px;
 }
 .sheet-title-checkbox:hover + span {
-	color: red;
+	color: $vapour;
 }
 .sheet-alchemicals {
 	padding: 0 5px;
@@ -2280,7 +2276,7 @@ input.sheet-title-checkbox {
 		height: 64px;
 		width: 200%;
 		padding: 2px;
-		border: 1px solid $lightest;
+		border: 1px solid $darkest_grey;
 	}
 	.repitem:nth-child(even) .sheet-alchemicals-info {
 		left: -100%;
@@ -2290,7 +2286,7 @@ input.sheet-title-checkbox {
 		font-family: serif;
 	}
 	.sheet-alchemicals-expand:checked + span {
-		color: red;
+		color: $vapour;
 	}
 	.itemcontrol .btn {
 		padding: 0 4px;
@@ -2324,7 +2320,7 @@ input.sheet-title-checkbox {
 	height: 24px;
 	align-items: center;
 	line-height: 14px;
-	background: $lighter;
+	background: $dark_grey;
 }
 .sheet-factions-header input[type=text] {
 	padding-left: 3px;
@@ -2353,9 +2349,9 @@ input.sheet-expand, .sheet-expand + span {
 	}
 }
 .sheet-faction {
-	border-bottom: 1px solid $lightest;
+	border-bottom: 1px solid $darkest_grey;
 	textarea {
-		border-top: 1px solid $lightest;
+		border-top: 1px solid $darkest_grey;
 		font-size: 11px;
 		line-height: 1.5;
 		height: 51px;
@@ -2367,7 +2363,7 @@ input.sheet-expand, .sheet-expand + span {
 		font-size: 12px;
 	}
 	input[type=text] {
-		border-right: 1px solid $lightest;
+		border-right: 1px solid $darkest_grey;
 		font-size: 12px;
 		padding: 2px 1px;
 	}
@@ -2405,8 +2401,8 @@ input.sheet-expand, .sheet-expand + span {
 }
 /* Generate button */
 label.sheet-generatebutton {
-	color: $lightblack;
-	border: 1px solid $darkgrey;
+	color: $lighter_grey;
+	border: 1px solid $dark_grey;
 	&:hover {
 		color: black;
 		border-color: black;
@@ -2473,7 +2469,7 @@ button[type=roll].sheet-broadcast-button {
 	line-height: 14px;
 	height: 14px;
 	width: 14px;
-	color: $lightblack;
+	color: $lighter_grey;
 	left: 3px;
 	bottom: 7px;
 }
@@ -2482,7 +2478,7 @@ button[type=roll].sheet-broadcast-button {
 	line-height: 11px;
 	height: 12px;
 	width: 12px;
-	color: $lightblack;
+	color: $lighter_grey;
 	right: 0;
 	bottom: 2px;
 }

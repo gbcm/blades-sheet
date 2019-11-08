@@ -266,7 +266,7 @@ const crewAttributes = [...new Set([].concat(...Object.keys(data.crew).map(x => 
 		"hunting_grounds_description",
 		"cohort1_edges",
 		"cohort1_flaws",
-		"heritage",
+		"metatype",
 		"background",
 		"vice_purveyor",
 	],

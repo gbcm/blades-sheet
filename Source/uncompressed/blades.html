@@ -106,13 +106,13 @@
     </div>
     <div class="setting-char"><span data-i18n="resistance_bonus"></span>
       <label>
-        <input type="number" name="attr_setting_resbonus_insight" value="0"/><span data-i18n="insight"></span>
+        <input type="number" name="attr_setting_resbonus_intuition" value="0"/><span data-i18n="intuition"></span>
       </label>
       <label>
-        <input type="number" name="attr_setting_resbonus_prowess" value="0"/><span data-i18n="prowess"></span>
+        <input type="number" name="attr_setting_resbonus_body" value="0"/><span data-i18n="body"></span>
       </label>
       <label>
-        <input type="number" name="attr_setting_resbonus_resolve" value="0"/><span data-i18n="resolve"></span>
+        <input type="number" name="attr_setting_resbonus_willpower" value="0"/><span data-i18n="willpower"></span>
       </label>
     </div>
     <div class="setting-char">
@@ -640,18 +640,18 @@
       <div class="col47 right-column actioncolumn small-margin">
         <div class="attribute col100">
           <div class="attribute-title flex col100">
-            <button class="rollbutton label" type="roll" name="roll_insight" value="&{template:bitd} {{charname=@{character_name}}} {{resist=1}} {{subtitle=^{resists} @{consequence_query} ^{with}}} {{title=^{insight}}} @{insight_formula} {{charimage=@{chat_image}}}" data-i18n="insight" data-i18n-title="insight_description"></button>
-            <input type="hidden" name="attr_insight" value="0"/>
-            <input type="hidden" name="attr_insight_formula" value=" {{?{@{bonusdice}|0,zerodice=[[d6]]&amp;#44; [[d6]]|1,dice=[[d6]]|2,dice=[[d6]]&amp;#44; [[d6]]|3,dice=[[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]|4,dice=[[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]|5,dice=[[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]|6,dice=[[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]|-1,zerodice=[[d6]]&amp;#44; [[d6]]|-2,zerodice=[[d6]]&amp;#44; [[d6]]|-3,zerodice=[[d6]]&amp;#44; [[d6]]}}}"/>
-            <input type="hidden" name="attr_insight_xp_max" value="6"/>
+            <button class="rollbutton label" type="roll" name="roll_intuition" value="&{template:bitd} {{charname=@{character_name}}} {{resist=1}} {{subtitle=^{resists} @{consequence_query} ^{with}}} {{title=^{intuition}}} @{intuition_formula} {{charimage=@{chat_image}}}" data-i18n="intuition" data-i18n-title="intuition_description"></button>
+            <input type="hidden" name="attr_intuition" value="0"/>
+            <input type="hidden" name="attr_intuition_formula" value=" {{?{@{bonusdice}|0,zerodice=[[d6]]&amp;#44; [[d6]]|1,dice=[[d6]]|2,dice=[[d6]]&amp;#44; [[d6]]|3,dice=[[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]|4,dice=[[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]|5,dice=[[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]|6,dice=[[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]|-1,zerodice=[[d6]]&amp;#44; [[d6]]|-2,zerodice=[[d6]]&amp;#44; [[d6]]|-3,zerodice=[[d6]]&amp;#44; [[d6]]}}}"/>
+            <input type="hidden" name="attr_intuition_xp_max" value="6"/>
             <div class="attribute-xp-box flex">
-              <input class="tooth zero" type="radio" name="attr_insight_xp" value="0" checked="checked"/><span></span>
-              <input class="tooth xptooth" type="radio" name="attr_insight_xp" value="1"/><span></span>
-              <input class="tooth xptooth" type="radio" name="attr_insight_xp" value="2"/><span></span>
-              <input class="tooth xptooth" type="radio" name="attr_insight_xp" value="3"/><span></span>
-              <input class="tooth xptooth" type="radio" name="attr_insight_xp" value="4"/><span></span>
-              <input class="tooth xptooth" type="radio" name="attr_insight_xp" value="5"/><span></span>
-              <input class="tooth xptooth" type="radio" name="attr_insight_xp" value="6"/><span></span>
+              <input class="tooth zero" type="radio" name="attr_intuition_xp" value="0" checked="checked"/><span></span>
+              <input class="tooth xptooth" type="radio" name="attr_intuition_xp" value="1"/><span></span>
+              <input class="tooth xptooth" type="radio" name="attr_intuition_xp" value="2"/><span></span>
+              <input class="tooth xptooth" type="radio" name="attr_intuition_xp" value="3"/><span></span>
+              <input class="tooth xptooth" type="radio" name="attr_intuition_xp" value="4"/><span></span>
+              <input class="tooth xptooth" type="radio" name="attr_intuition_xp" value="5"/><span></span>
+              <input class="tooth xptooth" type="radio" name="attr_intuition_xp" value="6"/><span></span>
             </div>
           </div>
           <div class="actions col100">
@@ -699,18 +699,18 @@
         </div>
         <div class="attribute col100">
           <div class="attribute-title flex col100">
-            <button class="rollbutton label" type="roll" name="roll_prowess" value="&{template:bitd} {{charname=@{character_name}}} {{resist=1}} {{subtitle=^{resists} @{consequence_query} ^{with}}} {{title=^{prowess}}} @{prowess_formula} {{charimage=@{chat_image}}}" data-i18n="prowess" data-i18n-title="prowess_description"></button>
-            <input type="hidden" name="attr_prowess" value="0"/>
-            <input type="hidden" name="attr_prowess_formula" value=" {{?{@{bonusdice}|0,zerodice=[[d6]]&amp;#44; [[d6]]|1,dice=[[d6]]|2,dice=[[d6]]&amp;#44; [[d6]]|3,dice=[[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]|4,dice=[[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]|5,dice=[[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]|6,dice=[[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]|-1,zerodice=[[d6]]&amp;#44; [[d6]]|-2,zerodice=[[d6]]&amp;#44; [[d6]]|-3,zerodice=[[d6]]&amp;#44; [[d6]]}}}"/>
-            <input type="hidden" name="attr_prowess_xp_max" value="6"/>
+            <button class="rollbutton label" type="roll" name="roll_body" value="&{template:bitd} {{charname=@{character_name}}} {{resist=1}} {{subtitle=^{resists} @{consequence_query} ^{with}}} {{title=^{body}}} @{body_formula} {{charimage=@{chat_image}}}" data-i18n="body" data-i18n-title="body_description"></button>
+            <input type="hidden" name="attr_body" value="0"/>
+            <input type="hidden" name="attr_body_formula" value=" {{?{@{bonusdice}|0,zerodice=[[d6]]&amp;#44; [[d6]]|1,dice=[[d6]]|2,dice=[[d6]]&amp;#44; [[d6]]|3,dice=[[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]|4,dice=[[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]|5,dice=[[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]|6,dice=[[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]|-1,zerodice=[[d6]]&amp;#44; [[d6]]|-2,zerodice=[[d6]]&amp;#44; [[d6]]|-3,zerodice=[[d6]]&amp;#44; [[d6]]}}}"/>
+            <input type="hidden" name="attr_body_xp_max" value="6"/>
             <div class="attribute-xp-box flex">
-              <input class="tooth zero" type="radio" name="attr_prowess_xp" value="0" checked="checked"/><span></span>
-              <input class="tooth xptooth" type="radio" name="attr_prowess_xp" value="1"/><span></span>
-              <input class="tooth xptooth" type="radio" name="attr_prowess_xp" value="2"/><span></span>
-              <input class="tooth xptooth" type="radio" name="attr_prowess_xp" value="3"/><span></span>
-              <input class="tooth xptooth" type="radio" name="attr_prowess_xp" value="4"/><span></span>
-              <input class="tooth xptooth" type="radio" name="attr_prowess_xp" value="5"/><span></span>
-              <input class="tooth xptooth" type="radio" name="attr_prowess_xp" value="6"/><span></span>
+              <input class="tooth zero" type="radio" name="attr_body_xp" value="0" checked="checked"/><span></span>
+              <input class="tooth xptooth" type="radio" name="attr_body_xp" value="1"/><span></span>
+              <input class="tooth xptooth" type="radio" name="attr_body_xp" value="2"/><span></span>
+              <input class="tooth xptooth" type="radio" name="attr_body_xp" value="3"/><span></span>
+              <input class="tooth xptooth" type="radio" name="attr_body_xp" value="4"/><span></span>
+              <input class="tooth xptooth" type="radio" name="attr_body_xp" value="5"/><span></span>
+              <input class="tooth xptooth" type="radio" name="attr_body_xp" value="6"/><span></span>
             </div>
           </div>
           <div class="actions col100">
@@ -758,18 +758,18 @@
         </div>
         <div class="attribute col100">
           <div class="attribute-title flex col100">
-            <button class="rollbutton label" type="roll" name="roll_resolve" value="&{template:bitd} {{charname=@{character_name}}} {{resist=1}} {{subtitle=^{resists} @{consequence_query} ^{with}}} {{title=^{resolve}}} @{resolve_formula} {{charimage=@{chat_image}}}" data-i18n="resolve" data-i18n-title="resolve_description"></button>
-            <input type="hidden" name="attr_resolve" value="0"/>
-            <input type="hidden" name="attr_resolve_formula" value=" {{?{@{bonusdice}|0,zerodice=[[d6]]&amp;#44; [[d6]]|1,dice=[[d6]]|2,dice=[[d6]]&amp;#44; [[d6]]|3,dice=[[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]|4,dice=[[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]|5,dice=[[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]|6,dice=[[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]|-1,zerodice=[[d6]]&amp;#44; [[d6]]|-2,zerodice=[[d6]]&amp;#44; [[d6]]|-3,zerodice=[[d6]]&amp;#44; [[d6]]}}}"/>
-            <input type="hidden" name="attr_resolve_xp_max" value="6"/>
+            <button class="rollbutton label" type="roll" name="roll_willpower" value="&{template:bitd} {{charname=@{character_name}}} {{resist=1}} {{subtitle=^{resists} @{consequence_query} ^{with}}} {{title=^{willpower}}} @{willpower_formula} {{charimage=@{chat_image}}}" data-i18n="willpower" data-i18n-title="willpower_description"></button>
+            <input type="hidden" name="attr_willpower" value="0"/>
+            <input type="hidden" name="attr_willpower_formula" value=" {{?{@{bonusdice}|0,zerodice=[[d6]]&amp;#44; [[d6]]|1,dice=[[d6]]|2,dice=[[d6]]&amp;#44; [[d6]]|3,dice=[[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]|4,dice=[[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]|5,dice=[[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]|6,dice=[[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]&amp;#44; [[d6]]|-1,zerodice=[[d6]]&amp;#44; [[d6]]|-2,zerodice=[[d6]]&amp;#44; [[d6]]|-3,zerodice=[[d6]]&amp;#44; [[d6]]}}}"/>
+            <input type="hidden" name="attr_willpower_xp_max" value="6"/>
             <div class="attribute-xp-box flex">
-              <input class="tooth zero" type="radio" name="attr_resolve_xp" value="0" checked="checked"/><span></span>
-              <input class="tooth xptooth" type="radio" name="attr_resolve_xp" value="1"/><span></span>
-              <input class="tooth xptooth" type="radio" name="attr_resolve_xp" value="2"/><span></span>
-              <input class="tooth xptooth" type="radio" name="attr_resolve_xp" value="3"/><span></span>
-              <input class="tooth xptooth" type="radio" name="attr_resolve_xp" value="4"/><span></span>
-              <input class="tooth xptooth" type="radio" name="attr_resolve_xp" value="5"/><span></span>
-              <input class="tooth xptooth" type="radio" name="attr_resolve_xp" value="6"/><span></span>
+              <input class="tooth zero" type="radio" name="attr_willpower_xp" value="0" checked="checked"/><span></span>
+              <input class="tooth xptooth" type="radio" name="attr_willpower_xp" value="1"/><span></span>
+              <input class="tooth xptooth" type="radio" name="attr_willpower_xp" value="2"/><span></span>
+              <input class="tooth xptooth" type="radio" name="attr_willpower_xp" value="3"/><span></span>
+              <input class="tooth xptooth" type="radio" name="attr_willpower_xp" value="4"/><span></span>
+              <input class="tooth xptooth" type="radio" name="attr_willpower_xp" value="5"/><span></span>
+              <input class="tooth xptooth" type="radio" name="attr_willpower_xp" value="6"/><span></span>
             </div>
           </div>
           <div class="actions col100">
@@ -1494,11 +1494,11 @@
               <div class="col50">
                 <div class="item">
                   <input class="checkbox squarebox" type="checkbox" name="attr_upgrade_20_check_1" value="1"/><span></span>
-                  <input class="itemname" type="text" spellcheck="false" name="attr_upgrade_20_name" value="Insight"/>
+                  <input class="itemname" type="text" spellcheck="false" name="attr_upgrade_20_name" value="intuition"/>
                 </div>
                 <div class="item-description">
                   <input class="expand" type="checkbox" name="attr_upgrade_20_expand" value="1"/><span></span>
-                  <textarea spellcheck="false" name="attr_upgrade_20_description" data-i18n-placeholder="description">Earn 2 xp when training insight during downtime.</textarea>
+                  <textarea spellcheck="false" name="attr_upgrade_20_description" data-i18n-placeholder="description">Earn 2 xp when training intuition during downtime.</textarea>
                 </div>
               </div>
             <div class="item col50">
@@ -1507,11 +1507,11 @@
               <div class="col50">
                 <div class="item">
                   <input class="checkbox squarebox" type="checkbox" name="attr_upgrade_21_check_1" value="1"/><span></span>
-                  <input class="itemname" type="text" spellcheck="false" name="attr_upgrade_21_name" value="Prowess"/>
+                  <input class="itemname" type="text" spellcheck="false" name="attr_upgrade_21_name" value="body"/>
                 </div>
                 <div class="item-description">
                   <input class="expand" type="checkbox" name="attr_upgrade_21_expand" value="1"/><span></span>
-                  <textarea spellcheck="false" name="attr_upgrade_21_description" data-i18n-placeholder="description">Earn 2 xp when training prowess during downtime.</textarea>
+                  <textarea spellcheck="false" name="attr_upgrade_21_description" data-i18n-placeholder="description">Earn 2 xp when training body during downtime.</textarea>
                 </div>
               </div>
             <div class="item col50">
@@ -1520,11 +1520,11 @@
               <div class="col50">
                 <div class="item">
                   <input class="checkbox squarebox" type="checkbox" name="attr_upgrade_22_check_1" value="1"/><span></span>
-                  <input class="itemname" type="text" spellcheck="false" name="attr_upgrade_22_name" value="Resolve"/>
+                  <input class="itemname" type="text" spellcheck="false" name="attr_upgrade_22_name" value="willpower"/>
                 </div>
                 <div class="item-description">
                   <input class="expand" type="checkbox" name="attr_upgrade_22_expand" value="1"/><span></span>
-                  <textarea spellcheck="false" name="attr_upgrade_22_description" data-i18n-placeholder="description">Earn 2 xp when training resolve during downtime.</textarea>
+                  <textarea spellcheck="false" name="attr_upgrade_22_description" data-i18n-placeholder="description">Earn 2 xp when training willpower during downtime.</textarea>
                 </div>
               </div>
             <div class="item col50">
@@ -1988,9 +1988,9 @@ const data = {
 	"factions": {
 	},
 	"actions": {
-		"insight": ["hunt", "study", "survey", "tinker"],
-		"prowess": ["finesse", "prowl", "skirmish", "wreck"],
-		"resolve": ["attune", "command", "consort", "sway"]
+		"intuition": ["hunt", "study", "survey", "tinker"],
+		"body": ["finesse", "prowl", "skirmish", "wreck"],
+		"willpower": ["attune", "command", "consort", "sway"]
 	},
 	"traumas": ["cold", "haunted", "obsessed", "paranoid", "reckless", "soft", "unstable", "vicious"],
 	"items": [],
@@ -2004,12 +2004,12 @@ const data = {
 		"factions4_header": "factions4",
 		"factions5_header": "factions5",
 		"friends_title": "friends",
-		"upgrade_20_name": "insight",
-		"upgrade_20_description": "upgrade_insight_description",
-		"upgrade_21_name": "prowess",
-		"upgrade_21_description": "upgrade_prowess_description",
-		"upgrade_22_name": "resolve",
-		"upgrade_22_description": "upgrade_resolve_description",
+		"upgrade_20_name": "intuition",
+		"upgrade_20_description": "upgrade_intuition_description",
+		"upgrade_21_name": "body",
+		"upgrade_21_description": "upgrade_body_description",
+		"upgrade_22_name": "willpower",
+		"upgrade_22_description": "upgrade_willpower_description",
 		"upgrade_23_name": "personal",
 		"upgrade_23_description": "upgrade_personal_description",
 		"upgrade_24_name": "mastery",
