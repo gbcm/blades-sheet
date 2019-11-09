@@ -638,10 +638,10 @@ textarea.sheet-smallcaps {
 	border-color: $grey;
 }
 /* LOGO */
-.sheet-bladeslogo {
+.sheet-runnerslogo {
 	border-right: 12px solid transparent;
 	height: 43px;
-	background-image: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Blades%20in%20the%20Dark/Assets/logo.png');
+	background-image: url('https://raw.githubusercontent.com/gbcm/blades-sheet/clean-sheet/Assets/logo.png');
 	background-size: 102% auto;
 	background-repeat: no-repeat;
 }
@@ -1280,7 +1280,7 @@ input.sheet-tooth {
 	opacity: 0.7;
 }
 .sheet-xptooth + span {
-	background-image: url('https://raw.githubusercontent.com/gbcm/blades-sheet/clean-sheet/Assets/teeth/xptooth-vapour.png');
+	background-image: url('https://raw.githubusercontent.com/gbcm/blades-sheet/clean-sheet/Assets/xptooth-vapour.png');
 	margin-right: 4px;
 }
 .sheet-tooth:checked ~ .sheet-xptooth + span {
@@ -1289,7 +1289,7 @@ input.sheet-tooth {
 .sheet-stresstooth[type=radio] + span,
 .sheet-stresstooth[type=checkbox]:checked + span,
 .sheet-holdtooth:checked + span {
-	background-image: url('https://raw.githubusercontent.com/gbcm/blades-sheet/clean-sheet/Assets/teeth/stresstooth-vapour.png');
+	background-image: url('https://raw.githubusercontent.com/gbcm/blades-sheet/clean-sheet/Assets/stresstooth-vapour.png');
 }
 .sheet-stresstooth[type=checkbox] + span,
 .sheet-tooth:checked ~ .sheet-stresstooth[type=radio] + span,
@@ -1297,7 +1297,7 @@ input.sheet-tooth {
 	background-image: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Blades%20in%20the%20Dark/Assets/teeth/stresstooth-white.png');
 }
 .sheet-regulartooth + span {
-	background-image: url('https://raw.githubusercontent.com/gbcm/blades-sheet/clean-sheet/Assets/teeth/shorttooth-vapour.png');
+	background-image: url('https://raw.githubusercontent.com/gbcm/blades-sheet/clean-sheet/Assets/shorttooth-vapour.png');
 }
 .sheet-tooth:checked ~ .sheet-regulartooth + span {
 	background-image: url('https://raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Blades%20in%20the%20Dark/Assets/teeth/shorttooth-grey.png');
