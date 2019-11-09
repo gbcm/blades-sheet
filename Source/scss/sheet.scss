@@ -362,7 +362,12 @@ $vapour_dark_bg: #FF2EFF;
 	font-weight: bold;
 }
 .sheet-greyholder {
-	background: $darkest_grey;
+	background: $dark_bg;
+  color: $vapour_dark_bg;
+
+  textarea {
+    color: $vapour_dark_bg;
+  }
 }
 .sheet-def-margin {
 	margin-top: 10px;
