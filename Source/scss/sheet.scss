@@ -1238,6 +1238,7 @@ textarea.sheet-smallcaps {
 	font-weight: bold;
 	input:checked + span {
 		color: $vapour;
+		font-style: italic;
 	}
 }
 .sheet-size-choice > .sheet-text-button {
@@ -2007,7 +2008,7 @@ input.sheet-checkbox.sheet-squarebox-small, .sheet-checkbox.sheet-squarebox-smal
 			border-top-color: white;
 		}
 		.sheet-checkbox:checked + span {
-			border-top-color: black;
+			border-top-color: $vapour;
 		}
 	}
 }
