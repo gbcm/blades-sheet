@@ -2019,7 +2019,7 @@ input.sheet-checkbox.sheet-squarebox-small, .sheet-checkbox.sheet-squarebox-smal
 		border-left-color: white;
 	}
 	.sheet-checkbox:checked + span {
-		border-left-color: black;
+		border-left-color: $vapour;
 	}
 }
 /* ACTION RATINGS */
